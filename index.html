@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+//	数字，大小写字母混合验证码。
+//	基础方法:
+	var str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	var yz = '';
+	for(var i=0; i<4; i++){
+		yz += str[random()];
+	}
+	document.write(yz);
+	
+	
+	function random(){
+		return parseInt(Math.random() * 61);
+	}
+</script>
